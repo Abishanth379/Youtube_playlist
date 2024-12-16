@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Playlist Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calculator-container">
+    <div class="logo-container">
+      <div class="youtube-logo">
+        <div class="play-button"></div>
+      </div>
+    </div>
+    <h1>YouTube Playlist Calculator</h1>
+    <h2>manage your time better by knowing the total duration of the playlist ;) </h2>
+    <p>Paste a YouTube playlist link below to calculate:</p>
+    <input type="text" id="playlistLink" placeholder="Enter YouTube Playlist Link">
+    <button onclick="calculatePlaylistDetails()">Calculate</button>
+    <div class="results">
+      <p id="playlistName"></p>
+      <p id="videoCount"></p>
+      <p id="playlistDuration"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

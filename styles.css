@@ -1,0 +1,118 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* Background Design */
+body {
+  background: linear-gradient(to bottom, black 50%, grey 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Calculator Container */
+.calculator-container {
+  background: linear-gradient(to bottom right, red, yellow); /* Red-yellow gradient */
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Logo Container */
+.logo-container {
+  margin-bottom: 10px;
+}
+
+/* YouTube Logo */
+.youtube-logo {
+  position: relative;
+  width: 100px;
+  height: 70px;
+  background-color: #ff0000;
+  border-radius: 10px;
+  margin: 0 auto;
+  animation: pulse 2s infinite;
+  border: 5px solid white; /* Add a white border for contrast */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Add a subtle shadow for depth */
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 24px solid white; /* Increased size for better visibility */
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+}
+
+/* Headings and Text */
+h1 {
+  font-size: 1.8rem;
+  color: white; /* Adjusted text color for readability */
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1rem;
+  color: #fff; /* Adjusted text color for readability */
+  margin: 10px 0;
+}
+
+/* Input and Button Styles */
+input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Results Section */
+.results {
+  margin-top: 20px;
+}
+
+.results p {
+  font: arial;
+  font-size: 1rem;
+  color: #fff; /* Adjusted text color for readability */
+}
+
+/* Pulse Animation for Logo */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
